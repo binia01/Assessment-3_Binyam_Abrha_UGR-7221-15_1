@@ -90,17 +90,15 @@ body {
 .operator-btn:active {
     background-color: #004080;
 }
-
-/* Adjustments for small mobile screens (480px or less) */
 @media (max-width: 365px) {
     .container {
-        width: 90%; /* Adjust width to fit smaller screens */
-        padding: 15px; /* Reduce padding */
+        width: 90%; 
+        padding: 15px;
     }
 
     #display {
-        font-size: 20px; /* Slightly smaller font size */
-        height: 40px; /* Reduce height */
+        font-size: 20px;
+        height: 40px; 
     }
 
     .btn,
@@ -108,9 +106,9 @@ body {
     .delete-btn,
     .equals-btn,
     .operator-btn {
-        font-size: 20px; /* Reduce button font size */
-        width: 60px; /* Smaller button width */
-        height: 60px; /* Smaller button height */
-        border-radius: 20px; /* Adjust border radius */
+        font-size: 20px; 
+        width: 60px; 
+        height: 60px; 
+        border-radius: 20px; 
     }
 }
