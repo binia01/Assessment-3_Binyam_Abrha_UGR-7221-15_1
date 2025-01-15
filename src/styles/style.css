@@ -1,5 +1,5 @@
-body{
-    margin:0;
+body {
+    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -7,9 +7,10 @@ body{
     font-family: Arial, sans-serif;
     background-color: #b50a0a;
 }
-.container{
-    border:1px solid black;
-    padding:20px;
+
+.container {
+    border: 1px solid black;
+    padding: 20px;
     border-radius: 20px;
     background-color: #fff;
     display: flex;
@@ -18,26 +19,31 @@ body{
     width: 350px;
     box-shadow: 0 8px 16px rgba(0, 123, 255, 0.2);
 }
-#display{
-    width:100%;
-    height:50px;
+
+#display {
+    width: 100%;
+    height: 50px;
     font-size: 24px;
     text-align: right;
     margin-bottom: 20px;
     padding-right: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    background-color: #f9f9f9; /* Light display background */
+    background-color: #f9f9f9;
     color: #333;
-
 }
-.buttons{
+
+.buttons {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.btn, .clear-btn, .delete-btn, .equals-btn, .operator-btn{
+.btn,
+.clear-btn,
+.delete-btn,
+.equals-btn,
+.operator-btn {
     margin: 3px 3px;
     font-size: 25px;
     width: 75px;
@@ -48,30 +54,63 @@ body{
     cursor: pointer;
 }
 
-.btn{
-    background-color: #007BFF; 
+.btn {
+    background-color: #007BFF;
     color: white;
 }
 
-.clear-btn{
-    background-color: #ffc107; 
+.clear-btn {
+    background-color: #ffc107;
     color: white;
 }
 
-.delete-btn{
-    background-color: #dc3545; 
+.delete-btn {
+    background-color: #dc3545;
     color: white;
 }
 
-.operator-btn, .equals-btn{
-    background-color: #28a745; 
+.operator-btn,
+.equals-btn {
+    background-color: #28a745;
     color: white;
 }
 
-.clear-btn:hover, .delete-btn:hover, .equals-btn:hover, .btn:hover, .operator-btn:hover{
-    background-color: #0056b3; 
+.clear-btn:hover,
+.delete-btn:hover,
+.equals-btn:hover,
+.btn:hover,
+.operator-btn:hover {
+    background-color: #0056b3;
 }
 
-.clear-btn:active, .delete-btn:active, .equals-btn:active, .btn:active, .operator-btn:active{
-    background-color: #004080; 
+.clear-btn:active,
+.delete-btn:active,
+.equals-btn:active,
+.btn:active,
+.operator-btn:active {
+    background-color: #004080;
+}
+
+/* Adjustments for small mobile screens (480px or less) */
+@media (max-width: 365px) {
+    .container {
+        width: 90%; /* Adjust width to fit smaller screens */
+        padding: 15px; /* Reduce padding */
+    }
+
+    #display {
+        font-size: 20px; /* Slightly smaller font size */
+        height: 40px; /* Reduce height */
+    }
+
+    .btn,
+    .clear-btn,
+    .delete-btn,
+    .equals-btn,
+    .operator-btn {
+        font-size: 20px; /* Reduce button font size */
+        width: 60px; /* Smaller button width */
+        height: 60px; /* Smaller button height */
+        border-radius: 20px; /* Adjust border radius */
+    }
 }
